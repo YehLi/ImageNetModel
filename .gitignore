@@ -2,6 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+.vscode
+classification/.vscode
+classification/checkpoints
+object_detection/.vscode
+semantic_segmentation/.vscode
+
 
 # C extensions
 *.so
