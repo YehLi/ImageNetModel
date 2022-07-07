@@ -8,7 +8,7 @@
 * pyyaml
 * apex-amp
 
-## CoTNet Results on ImageNet
+# CoTNet Results on ImageNet
 | name | resolution | #params | FLOPs | Top-1 Acc. | Top-5 Acc. | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | CoTNet-50 | 224 | 22.2M | 3.3 | 81.3 | 95.6 | [GoogleDrive](https://drive.google.com/file/d/1SR5ezIu7LN943zHaUh4mC0ehxBVMqtfv/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1czr00SglgD8dNVK8jT1yLg) |
@@ -19,6 +19,7 @@
 | SE-CoTNetD-101 | 224 | 40.9M | 8.5 | 83.2 | 96.5 | [GoogleDrive](https://drive.google.com/file/d/1PWIltQYpYZiDrpfZORRQzGzQeXVd2b2f/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1WGFzuwio5lWJKiOOJTnjdg) |
 | SE-CoTNetD-152 | 224 | 55.8M | 17.0 | 84.0 | 97.0 | [GoogleDrive](https://drive.google.com/file/d/1MkMx0a8an3ikt6LZwClIOyabBnMfR91v/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/14mNVsSf-6WI3mxLN2WinWw) |
 | SE-CoTNetD-152 | 320 | 55.8M | 26.5 | 84.6 | 97.1 | [GoogleDrive](https://drive.google.com/file/d/1E43T2jS37gR07p_FVWnjJNkMWeYMXgX9/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1kO5of8IPgL4HOudLeykS6w) |
+
 Access code for Baidu is **cotn**
 
 # Wave-ViT Results on ImageNet
@@ -30,6 +31,7 @@ Access code for Baidu is **cotn**
 | Wave-ViT-B | 384 | 33.5M | 23.4 | 85.6 | 97.4 | [Baidu](https://pan.baidu.com/s/1KYINKOLO4Bf9kabDMjN-TA) |
 | Wave-ViT-L | 224 | 57.5M | 14.8 | 85.5 | 97.3 | [Baidu](https://pan.baidu.com/s/1L-ZQ1eiv4sdefvdi7Z4-bw) |
 | Wave-ViT-L | 384 | 57.5M | 47.5 | 86.3 | 97.7 | [Baidu](https://pan.baidu.com/s/1BdQBbdUeeAo8CojNifURGw) |
+
 Access code for Baidu is **nets**
 
 # Dual-ViT Results on ImageNet
@@ -41,4 +43,5 @@ Access code for Baidu is **nets**
 | Dual-ViT-B | 384 | 42.6M | 31.9 | 86.0 | 97.6 | Baidu |
 | Dual-ViT-L | 224 | 73.0M | 18.0 | 85.7 | 97.4 | Baidu |
 | Dual-ViT-L | 384 | 73.0M | 60.5 | 86.5 | 97.8 | Baidu |
+
 Access code for Baidu is **nets**
