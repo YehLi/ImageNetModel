@@ -1,13 +1,27 @@
 # Introduction
 This repository contains the official implementation of the following papers:
-<details>
-<summary>
-  <a href="https://github.com/JDAI-CV/CoTNet/blob/master/README.md">CoTNet</a> Contextual transformer networks for visual recognition, TPAMI 2022 [<b>bib</b>]
+- <a href="https://github.com/JDAI-CV/CoTNet/blob/master/README.md">**CoTNet**</a> Contextual transformer networks for visual recognition, TPAMI 2022
   <p align="center">
     <img src="images/CoTNet_framework.jpg" width="800"/>
   </p>
-</summary>
 
+- <a href="classification/README.md">**Wave-ViT**</a> Wave-ViT: Unifying Wavelet and Transformers for Visual Representation Learning, ECCV 2022
+  <p align="center">
+    <img src="images/WaveVit_framework.jpg" width="800"/>
+  </p>
+
+- <a href="classification/README.md">**Dual-ViT**</a> Dual Vision Transformer
+  <p align="center">
+    <img src="images/DualVit_framework.jpg" width="800"/>
+  </p>
+
+# Getting Started
+- For **Image Classification**, please see [classification](classification/README.md).
+- For **Object Detection and Instance Segmentation**, please see [object_detection](object_detection/README.md).
+- For **Semantic Segmentation**, please see [semantic_segmentation](semantic_segmentation/README.md).
+
+# Citation
+CoTNet
 ```
 @article{cotnet2022,
   title={Contextual transformer networks for visual recognition},
@@ -17,16 +31,8 @@ This repository contains the official implementation of the following papers:
   publisher={IEEE}
 }
 ```
-</details>
 
-<details>
-<summary>
-<a href="https://github.com/YehLi/ImageNetModel/classification/README.md">Wave-ViT</a> Wave-ViT: Unifying Wavelet and Transformers for Visual Representation Learning, ECCV 2022  [<b>bib</b>]
-  <p align="center">
-    <img src="images/WaveVit_framework.jpg" width="800"/>
-  </p>
-</summary>
-
+Wave-ViT
 ```
 @inproceedings{wavevit2022,
     title     = {Wave-ViT: Unifying Wavelet and Transformers for Visual Representation Learning},
@@ -35,30 +41,16 @@ This repository contains the official implementation of the following papers:
     year      = {2022},
 }
 ```
-</details>
 
-<details>
-<summary>
-<a href="https://github.com/YehLi/ImageNetModel/classification/README.md">Dual-ViT</a> Dual Vision Transformer  [<b>bib</b>]
-  <p align="center">
-    <img src="images/DualVit_framework.jpg" width="800"/>
-  </p>
-</summary>
-
+Dual-ViT
 ```
 @article{dualvit2022,
   title={Dual Vision Transformer},
-  author={Yao, Ting and Li, Yehao and Pan, Yingwei and Wang, Yu and Zhang, Xiao-Ping and Mei, Tao},
+  author={Yao, Ting and Li, Yehao and Pan, Yingwei and Wang, Yu and Mei, Tao},
   journal={arXiv preprint arXiv:},
   year={2022}
 }
 ```
-</details>
-
-# Getting Started
-- For **Image Classification**, please see [classification](https://github.com/YehLi/ImageNetModel/classification/README.md).
-- For **Object Detection and Instance Segmentation**, please see [object_detection](https://github.com/YehLi/ImageNetModel/object_detection/README.md).
-- For **Semantic Segmentation**, please see [semantic_segmentation](https://github.com/YehLi/ImageNetModel/semantic_segmentation/README.md).
 
 # Acknowledgements
 Thanks the contribution of [timm](https://github.com/rwightman/pytorch-image-models), [pvt](https://github.com/whai362/PVT) and [volo](https://github.com/sail-sg/volo).
