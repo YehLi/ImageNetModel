@@ -278,7 +278,7 @@ class MergeBlock(nn.Module):
         x = x + self.drop_path(self.gamma1 * self.attn(self.norm1(x), H, W))
 
         if self.is_last:
-            x, proxy = torch.split(x, [H*W, x.shape[1] - H*W], dim=1)
+            x, _ = torch.split(x, [H*W, x.shape[1] - H*W], dim=1)
             x = x + self.drop_path(self.gamma2 * self.mlp(self.norm2(x), H, W))
         else:
             x = x + self.drop_path(self.gamma2 * self.mlp(self.norm2(x), H, W))
@@ -318,11 +318,11 @@ class DualBlock(nn.Module):
             if m.bias is not None:
                 m.bias.data.zero_()
 
-    def forward(self, x, H, W, proxy):
-        _x, proxy = self.attn(self.norm1(x), H, W, proxy)
+    def forward(self, x, H, W, semantics):
+        _x, semantics = self.attn(self.norm1(x), H, W, semantics)
         x = x + self.drop_path(self.gamma1 * _x)
         x = x + self.drop_path(self.gamma2 * self.mlp(self.norm2(x), H, W))
-        return x, proxy
+        return x, semantics
 
 class DownSamples(nn.Module):
     def __init__(self, in_channels, out_channels):
@@ -429,9 +429,9 @@ class SemanticEmbed(nn.Module):
             if m.bias is not None:
                 m.bias.data.zero_()
 
-    def forward(self, proxy):
-        proxy = self.proj_proxy(proxy)
-        return proxy
+    def forward(self, semantics):
+        semantics = self.proj_proxy(semantics)
+        return semantics
 
 @BACKBONES.register_module()
 class DualVit(nn.Module):
@@ -559,7 +559,7 @@ class DualVit(nn.Module):
             semantics = norm_semantics(semantics)
         return x, semantics, outs
 
-    def forward_merge(self, x, proxy):
+    def forward_merge(self, x, semantics):
         B = x.shape[0]
         outs = []
         for i in range(self.sep_stage, self.num_stages):
