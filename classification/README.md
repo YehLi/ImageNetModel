@@ -22,7 +22,20 @@
 
 Access code for Baidu is **cotn**
 
-# Wave-ViT Results on ImageNet
+# Wave-ViT 
+### Train
+```
+python3 -m torch.distributed.launch \
+   --nproc_per_node=8 \
+   --nnodes=1 \
+   --node_rank=0 \
+   --master_addr="localhost" \
+   --master_port=12346 \
+   --use_env main.py --config configs/wavevit/wavevit_s.py --data-path /export/home/dataset/imagenet --epochs 310 --batch-size 128 \
+   --token-label --token-label-size 7 --token-label-data /export/home/dataset/imagenet/label_top5_train_nfnet
+```
+
+### Results on ImageNet
 | name | resolution | #params | FLOPs | Top-1 Acc. | Top-5 Acc. | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | Wave-ViT-S | 224 | 22.7M | 4.7 | 83.9  | 96.6 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
@@ -34,7 +47,20 @@ Access code for Baidu is **cotn**
 
 Access code for Baidu is **nets**
 
-# Dual-ViT Results on ImageNet
+# Dual-ViT 
+### Train
+```
+python3 -m torch.distributed.launch \
+   --nproc_per_node=8 \
+   --nnodes=1 \
+   --node_rank=0 \
+   --master_addr="localhost" \
+   --master_port=12346 \
+   --use_env main.py --config configs/dualvit/dualvit_s.py --data-path /export/home/dataset/imagenet --epochs 310 --batch-size 128 \
+   --token-label --token-label-size 7 --token-label-data /export/home/dataset/imagenet/label_top5_train_nfnet
+```
+
+### Results on ImageNet
 | name | resolution | #params | FLOPs | Top-1 Acc. | Top-5 Acc. | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | Dual-ViT-S | 224 | 25.1M | 5.4 | 84.1  | 96.8 | Baidu |
