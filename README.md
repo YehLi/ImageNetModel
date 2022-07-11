@@ -5,20 +5,20 @@ This repository contains the official implementation of the following papers:
     <img src="images/CoTNet_framework.jpg" width="800"/>
   </p>
 
-- <a href="classification/README.md">**Wave-ViT**</a> Wave-ViT: Unifying Wavelet and Transformers for Visual Representation Learning, ECCV 2022
+- <a href="classification">**Wave-ViT**</a> Wave-ViT: Unifying Wavelet and Transformers for Visual Representation Learning, ECCV 2022
   <p align="center">
     <img src="images/WaveVit_framework.jpg" width="800"/>
   </p>
 
-- <a href="classification/README.md">**Dual-ViT**</a> Dual Vision Transformer
+- <a href="classification">**Dual-ViT**</a> Dual Vision Transformer
   <p align="center">
     <img src="images/DualVit_framework.jpg" width="800"/>
   </p>
 
 # Getting Started
-- For **Image Classification**, please see [classification](classification/README.md).
-- For **Object Detection and Instance Segmentation**, please see [object_detection](object_detection/README.md).
-- For **Semantic Segmentation**, please see [semantic_segmentation](semantic_segmentation/README.md).
+- For **Image Classification**, please see [classification](classification).
+- For **Object Detection and Instance Segmentation**, please see [object_detection](object_detection).
+- For **Semantic Segmentation**, please see [semantic_segmentation](semantic_segmentation).
 
 # Citation
 CoTNet
