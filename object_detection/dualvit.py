@@ -475,7 +475,7 @@ class DualVit(nn.Module):
                 trunc_normal_(self.q, std=.02)
             else:
                 semantic_embed = SemanticEmbed(
-                    in_chans = embed_dims[i - 1], embed_dim=embed_dims[i]
+                    embed_dims[i - 1], embed_dims[i]
                 )
                 setattr(self, f"proxy_embed{i + 1}", semantic_embed)
 
