@@ -1,6 +1,6 @@
 _base_ = [
     '_base_/models/cascade_mask_rcnn_vit_fpn.py',
-    '_base_/datasets/coco_instance_b1.py',
+    '_base_/datasets/coco_instance.py',
     '_base_/schedules/schedule_1x.py',
     '_base_/default_runtime.py'
 ]
