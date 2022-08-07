@@ -34,6 +34,10 @@ dist_train.sh configs/wavevit/sparse_rcnn_wavevit_s_fpn_300_proposals_crop_mstra
 | Mask R-CNN 1x |  Wave-ViT-S | 46.6 | 68.7 | 51.2 | 42.4 | 65.5 | 45.8 | [config](configs/wavevit/mask_rcnn_wavevit_s_fpn_1x_coco.py) |
 | Mask R-CNN 1x |  Wave-ViT-B | 47.6 | 69.1 | 52.4 | 43.0 | 66.4 | 46.0 | [config](configs/wavevit/mask_rcnn_wavevit_b_fpn_1x_coco.py) |
 
+Wave-ViT pre-trained models can be downloaded [here](https://pan.baidu.com/s/1pWlyXad9IQIOMQNuotqPiw)
+
+Access code for Baidu is **nets**
+
 # Dual-ViT
 ## Training
 ```
@@ -63,3 +67,7 @@ dist_train.sh configs/dualvit/sparse_rcnn_dualvit_b_fpn_300_proposals_crop_mstra
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |  :------------: |
 | Mask R-CNN 1x |  Dual-ViT-S | 46.5 | 68.3 | 51.2 | 42.2 | 65.3 | 46.1 | [config](configs/dualvit/mask_rcnn_dualvit_s_fpn_1x_coco.py) |
 | Mask R-CNN 1x |  Dual-ViT-B | 48.4 | 69.9 | 53.3 | 43.4 | 66.7 | 46.8 | [config](configs/dualvit/mask_rcnn_dualvit_b_fpn_1x_coco.py) |
+
+Dual-ViT pre-trained models can be downloaded [here](https://pan.baidu.com/s/14eufLJprx3Ug1cOPVc2H_g)
+
+Access code for Baidu is **nets**
