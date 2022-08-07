@@ -674,10 +674,19 @@ class DualViT(nn.Module):
             C = x.shape[-1]
             if i == 0:
                 x_down = self.pool(x.reshape(B, H, W, C).permute(0, 3, 1, 2))
+                x_down_H, x_down_W = x_down.shape[2:]
                 x_down = x_down.view(B, C, -1).permute(0, 2, 1)
                 kv = self.kv(x_down).view(B, -1,  2, C).permute(2, 0, 1, 3)
                 k, v = kv[0], kv[1]  # B, N, C
-                attn = (self.q_embed(self.q) @ k.transpose(-1, -2)) * self.scale   # q: 1, M, C,   k: B, N, C -> B, M, N
+                
+                if x_down.shape[1] == self.q.shape[0]:
+                    self_q = self.q
+                else:
+                    self_q = self.q.reshape(8, 8, -1).permute(2, 0, 1)
+                    self_q = F.interpolate(self_q.unsqueeze(0), size=(x_down_H, x_down_W), mode='bicubic').squeeze(0).permute(1, 2, 0)
+                    self_q = self_q.reshape(-1, self_q.shape[-1])
+                
+                attn = (self.q_embed(self_q) @ k.transpose(-1, -2)) * self.scale   # q: 1, M, C,   k: B, N, C -> B, M, N
                 attn = attn.softmax(-1)  # B, M, N
                 semantics = attn @ v   # B, M, C
                 semantics = semantics.view(B, -1, C)
@@ -803,7 +812,7 @@ def dualvit_s(pretrained=False, **kwargs):
         stem_hidden_dim = 32,
         embed_dims = [64, 128, 320, 448], 
         num_heads = [2, 4, 10, 14], 
-        mlp_ratios = [8, 8, 4, 3],
+        mlp_ratios = [8, 8, 4, 3, 2],
         norm_layer = partial(nn.LayerNorm, eps=1e-6), 
         depths = [3, 4, 6, 3], 
         **kwargs)
@@ -816,7 +825,7 @@ def dualvit_b(pretrained=False, **kwargs):
         stem_hidden_dim = 64,
         embed_dims = [64, 128, 320, 512], 
         num_heads = [2, 4, 10, 16], 
-        mlp_ratios = [8, 8, 4, 3],
+        mlp_ratios = [8, 8, 4, 3, 2],
         norm_layer = partial(nn.LayerNorm, eps=1e-6), 
         depths = [3, 4, 15, 3], 
         **kwargs)
@@ -829,7 +838,7 @@ def dualvit_l(pretrained=False, **kwargs):
         stem_hidden_dim = 64,
         embed_dims = [96, 192, 384, 512], 
         num_heads = [3, 6, 12, 16], 
-        mlp_ratios = [8, 8, 4, 3],
+        mlp_ratios = [8, 8, 4, 3, 2],
         norm_layer = partial(nn.LayerNorm, eps=1e-6), 
         depths = [3, 6, 21, 3], 
         **kwargs)
