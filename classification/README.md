@@ -63,11 +63,11 @@ python3 -m torch.distributed.launch \
 ### Results on ImageNet
 | name | resolution | #params | FLOPs | Top-1 Acc. | Top-5 Acc. | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| Dual-ViT-S | 224 | 25.1M | 5.4 | 84.1  | 96.8 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
-| Dual-ViT-S | 384 | 25.1M | 18.4 | 85.2 | 97.3 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
+| Dual-ViT-S | 224 | 25.1M | 5.4 | 84.1  | 96.8 | [Baidu](https://pan.baidu.com/s/1mJapQgFXs3NYnFUCbsgYwQ) |
+| Dual-ViT-S | 384 | 25.1M | 18.4 | 85.2 | 97.3 | [Baidu](https://pan.baidu.com/s/19efu-TJ0O5o4jIZXSbcNeg) |
 | Dual-ViT-B | 224 | 42.6M | 9.3 | 85.2  | 97.2 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
-| Dual-ViT-B | 384 | 42.6M | 31.9 | 86.0 | 97.6 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
-| Dual-ViT-L | 224 | 73.0M | 18.0 | 85.7 | 97.4 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
-| Dual-ViT-L | 384 | 73.0M | 60.5 | 86.5 | 97.8 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
+| Dual-ViT-B | 384 | 42.6M | 31.9 | 86.0 | 97.6 | [Baidu](https://pan.baidu.com/s/1ujl-tHF5WVJRkb3xRoJoLQ) |
+| Dual-ViT-L | 224 | 73.0M | 18.0 | 85.7 | 97.4 | [Baidu](https://pan.baidu.com/s/1UGI4vVj-Oivv7yR0K2bEXg) |
+| Dual-ViT-L | 384 | 73.0M | 60.5 | 86.5 | 97.8 | [Baidu](https://pan.baidu.com/s/1PyvD3sswCG_66pHQtWw0Rw) |
 
 Access code for Baidu is **nets**
