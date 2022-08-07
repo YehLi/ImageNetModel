@@ -19,18 +19,8 @@ model = dict(
         num_outs=5))
 # optimizer
 optimizer = dict(_delete_=True, type='AdamW', lr=0.0001, weight_decay=0.0001)
-#optimizer_config = dict(grad_clip=None)
+optimizer_config = dict(grad_clip=None)
 
-###################################################
-runner = dict(type='EpochBasedRunnerAmp', max_epochs=12)
-fp16 = None
-optimizer_config = dict(
-    type="DistOptimizerHook",
-    update_interval=1,
-    grad_clip=None,
-    coalesce=True,
-    bucket_size_mb=-1,
-    use_fp16=True,
-)
-
+runner = dict(type='EpochBasedRunner', max_epochs=12)
+fp16 = dict(loss_scale=512.)
 find_unused_parameters = True
