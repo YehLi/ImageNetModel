@@ -129,7 +129,7 @@ data = dict(
     train=dict(pipeline=train_pipeline))
 lr_config = dict(policy='step', step=[27, 33])
 runner = dict(type='EpochBasedRunner', max_epochs=36)
-
+fp16 = dict(loss_scale=512.)
 ###################################################
 #runner = dict(type='EpochBasedRunnerAmp', max_epochs=36)
 #fp16 = None
