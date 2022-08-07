@@ -10,7 +10,7 @@ tools/dist_train.sh configs/wavevit/upernet_wavevit_s_512x512_160k_ade20k.py 8 -
 # Wave-ViT-B
 tools/dist_train.sh configs/wavevit/upernet_wavevit_b_512x512_160k_ade20k.py 8 --options model.pretrained=Pretrained/wavevit_b.pth
 ```
-pre-trained models for semantic segmentation can be downloaded [here](https://pan.baidu.com/s/1pWlyXad9IQIOMQNuotqPiw)
+Wave-ViT pre-trained models for semantic segmentation can be downloaded [here](https://pan.baidu.com/s/1pWlyXad9IQIOMQNuotqPiw)
 
 Access code for Baidu is **nets**
 
@@ -23,7 +23,7 @@ tools/dist_train.sh configs/dualvit/upernet_dualvit_s_512x512_160k_ade20k.py 8 -
 tools/dist_train.sh configs/dualvit/upernet_dualvit_b_512x512_160k_ade20k.py 8 --options model.pretrained=Pretrained/dualvit_b.pth
 ```
 
-pre-trained models for semantic segmentation can be downloaded [here](https://pan.baidu.com/s/14eufLJprx3Ug1cOPVc2H_g)
+Dual-ViT pre-trained models for semantic segmentation can be downloaded [here](https://pan.baidu.com/s/14eufLJprx3Ug1cOPVc2H_g)
 
 Access code for Baidu is **nets**
 
