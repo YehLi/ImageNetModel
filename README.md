@@ -46,8 +46,8 @@ Dual-ViT
 ```
 @article{dualvit2022,
   title={Dual Vision Transformer},
-  author={Yao, Ting and Li, Yehao and Pan, Yingwei and Wang, Yu and Mei, Tao},
-  journal={arXiv preprint arXiv:},
+  author={Yao, Ting and Li, Yehao and Pan, Yingwei and Wang, Yu and Zhang, Xiao-Ping and Mei, Tao},
+  journal={arXiv preprint arXiv:2207.04976},
   year={2022}
 }
 ```
