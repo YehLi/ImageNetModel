@@ -38,12 +38,12 @@ python3 -m torch.distributed.launch \
 ### Results on ImageNet
 | name | resolution | #params | FLOPs | Top-1 Acc. | Top-5 Acc. | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| Wave-ViT-S | 224 | 22.7M | 4.7 | 83.9  | 96.6 | [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
-| Wave-ViT-S | 384 | 22.7M | 15.1 | 85.0 | 97.2 | [Baidu](https://pan.baidu.com/s/1RLxSDwVG1wQs29s0x3_6QA) |
-| Wave-ViT-B | 224 | 33.5M | 7.2 |  84.8 | 97.1 | [Baidu](https://pan.baidu.com/s/16DLjX7dKaZuULn7OrxVqyw) |
-| Wave-ViT-B | 384 | 33.5M | 23.4 | 85.6 | 97.4 | [Baidu](https://pan.baidu.com/s/1KYINKOLO4Bf9kabDMjN-TA) |
-| Wave-ViT-L | 224 | 57.5M | 14.8 | 85.5 | 97.3 | [Baidu](https://pan.baidu.com/s/1L-ZQ1eiv4sdefvdi7Z4-bw) |
-| Wave-ViT-L | 384 | 57.5M | 47.5 | 86.3 | 97.7 | [Baidu](https://pan.baidu.com/s/1BdQBbdUeeAo8CojNifURGw) |
+| Wave-ViT-S | 224 | 22.7M | 4.7 | 83.9  | 96.6 | [GoogleDrive](https://drive.google.com/file/d/1DLdqLRPiARBXAc9DQQtamVZnFtMWBurd/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1JfNgmBE5ieAGsBermjpSzQ) |
+| Wave-ViT-S | 384 | 22.7M | 15.1 | 85.0 | 97.2 | [GoogleDrive](https://drive.google.com/file/d/1aR_5zZ-iVDbUyEEMkvYNV7Nj78C7dJ6G/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1RLxSDwVG1wQs29s0x3_6QA) |
+| Wave-ViT-B | 224 | 33.5M | 7.2 |  84.8 | 97.1 | [GoogleDrive](https://drive.google.com/file/d/1g-_eP_ty1JmEsiRqmErwFgf4XTo0ML61/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/16DLjX7dKaZuULn7OrxVqyw) |
+| Wave-ViT-B | 384 | 33.5M | 23.4 | 85.6 | 97.4 | [GoogleDrive](https://drive.google.com/file/d/1mrtGVPIJ8-F9SDofuIwBccXa-xA_E7s1/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1KYINKOLO4Bf9kabDMjN-TA) |
+| Wave-ViT-L | 224 | 57.5M | 14.8 | 85.5 | 97.3 | [GoogleDrive](https://drive.google.com/file/d/11MitPmWgg3GB02ndLT4rFO3xc6n3Jmyh/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1L-ZQ1eiv4sdefvdi7Z4-bw) |
+| Wave-ViT-L | 384 | 57.5M | 47.5 | 86.3 | 97.7 | [GoogleDrive](https://drive.google.com/file/d/1Rda4zS2JG0MlcQqrtxKzSWh2149_e5wV/view?usp=sharing) / [Baidu](https://pan.baidu.com/s/1BdQBbdUeeAo8CojNifURGw) |
 
 Access code for Baidu is **nets**
 
